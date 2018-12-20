@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+#header{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: auto;
+}
+#header-img{
+    float: left;
+    width: auto; 
+    height: 10vh;
+}
+#nav-bar{
+    float: right;
+}
+#nav-bar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+}
+#nav-bar li{
+    display: inline;
+    font-size: 20px;
+}
+#nav-bar li a{
+    padding: 10px 16px;
+    text-decoration: none;
+    color: white;
+}
+#nav-bar li a:hover{
+    color: red;
+}
+
+#home{
+    padding-top: 10vh;
+    background-color: black;
+    height: 90vh;
+}
+#home-contents{
+    color: white;
+    text-align: center;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+#home img{
+    margin-top: 20px;
+}
+#home-price{
+    margin-top: 10px;
+    font-size: 30px;
+    color: red;
+}
+#features{
+    padding-top: 10vh;
+    height: 100vh;
+}
+#container{
+    margin-top: 100px;
+
+}
+#container .row{
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+    height: 300px;
+}
+#container .row p{
+    text-align: justify;
+}
+#features .column-left{
+    float: left;
+    width: 60%;
+    padding: 10px;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+#features img{
+    width: 300px;
+    height: auto;
+}
+.previous-button, .next-button{
+    padding: 5px 20px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: red;
+    color: white;
+}
+#tech-specs{
+    padding-top: 10vh;
+}
+table{
+    margin: auto;
+    border-collapse:collapse;
+    border-style:hidden;
+}
+td{
+    padding:0.25em;
+    border:1px solid black;
+}
+#models{padding-top: 10vh;}
+
+.section-heading{
+    font-size: 30px;
+}
+.model-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+    padding: 10px;
+}
+.model-card::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.model-heading{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.model-price{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+.model-card dt{
+    font-weight: bold;
+    font-size: 15px;
+}
+.model-card dd{
+    font-size: 12px;
+}
+.buy-button{
+    border: none;
+    background-color: red;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.buy-button:hover{
+    background-color: black;
+    color: red;
+}
+footer{
+    background-color: black;
+    height: 10vh;
+    color: white;
+    padding: 20px;
+}
+#form{
+    text-align: center;
+}
+#footer-left{
+    float: left;
+}
+#footer-right{
+    float: right;
+    text-align: right;
+}
+#email{
+    width: 300px;
+    height: 20px;
+    border: solid 1px white;
+}
+#submit{
+    width: 100px;
+    height: 25px;
+    border: none;
+    background-color: red;
+    color: white;
+}
+#footer-right a{
+    text-decoration: none;
+    color: red;
+}
+
+@media screen and (max-width: 800px){
+    #header-img{
+        height: 50px;
+        width: auto;
+    }
+    #header ul{
+        padding: 15px;
+    }
+    #header li{
+        font-size: 10px;
+    }
+    footer{
+        height: 20vh;
+    }
+    #footer-right{
+        float: left;
+    }
+    
+    #container .row{
+        margin: auto;
+        width: 60%;
+        padding: 20px;
+        height: 300px;
+    }
+    #container .row h2{
+        font-size: 15px;
+    }
+    #container .row p{
+        text-align: justify;
+        font-size: 15px;
+    }
+    #features .column-left{
+        width: 100%;
+        padding: 10px;
+    }
+    #features .column-right{
+        text-align: center;
+    }
+    #features img{
+        width: 200px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #header-img{
+        height: 20px;
+        width: auto;
+    }
+    #header ul{
+        padding: 0%;
+    }
+    #header li{
+        font-size: 50%;
+    }
+    #home img{
+        width: 300px;
+        height: auto;
+    }
+    #home{
+        font-size: 10px;
+    }
+    footer{
+        height: 20vh;
+    }
+    #email{
+        width: 200px;
+    }
+    #container .row{
+        margin: auto;
+        width: 80%;
+        padding: 20px;
+        height: 300px;
+    }
+    #container .row h2{
+        font-size: 15px;
+    }
+    #container .row p{
+        text-align: justify;
+        font-size: 12px;
+    }
+    #features .column-left{
+        width: 100%;
+        padding: 5px;
+    }
+    #features .column-right{
+        text-align: center;
+    }
+    #features img{
+        width: 200px;
+        height: auto;
+    }
+}
