@@ -64,7 +64,7 @@
 }
 .project-title{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     display: none;
     color: black;
     line-height: 400px;
@@ -74,12 +74,16 @@
     font-weight: bold;
     line-height: 200px;
     color: black;
+    line-height: 400px;
+}
+.show-more:hover{
+    font-size: 20px;
 }
 .project:hover .project-img{
     display: none;
 }
 .project:hover .project-title{
-    display: inline;
+    display: block;
 }
 .previous-button, .next-button{
     margin-top: 20px;
@@ -92,18 +96,49 @@
 #contact{
     padding-top: 10vh;
     height: 90vh;
+    text-align: center;
 }
 .platforms {
+    margin-top: 30vh;
+    text-align: center;
     display: inline-block;
-  font-weight: bold;
-  margin: 0 35px 45px 35px;
-  list-style-type: none;
-  border: 2px solid #90C695;
-  border-radius: 100%;
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  background: #e0ebe8;
-  color: #008080;
-  text-decoration: none;
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+    color: black;
+    text-decoration: none;
+    font-size: 50px;
+}
+.p-name{
+    display: none;
+}
+.platforms:hover .fa{
+    display: none;
+}
+.platforms:hover .p-name{
+    display: inline-block;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 400px){
+    .project{
+        text-decoration: none;
+        display: inline-block;
+        border: 2px solid rgb(240, 255, 37);
+        height: 200px;
+        width: 300px;
+        margin: auto;
+    }
+    .project-title{
+        line-height: 200px;
+    }
+    .platforms {
+        width: 50px;
+        height: 50px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .platforms:hover .p-name{
+        font-size: 10px;
+    }
 }
